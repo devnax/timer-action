@@ -1,5 +1,5 @@
 const timers: any = {};
-const action = (key: string, callback: Function, miliseconds = 400) => {
+export default (key: string, callback: Function, miliseconds = 400) => {
   if(timers[key]){
     clearTimeout(timers[key])
   }
